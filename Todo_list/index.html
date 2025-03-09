@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="addTask invert">
+            <img src="images/add.svg" alt="Add Task">
+        </div>
+        <h1>TO-DO LIST</h1>
+        <div class="clearAll invert">
+            <img src="images/clearAll.svg" alt="Clear All Tasks">
+        </div>
+    </header>
+    <main>
+        <div class="textarea">
+            <div class="textarea-total-tasks aligner">Total Tasks: <span>0</span></div>
+            <div class="textarea-completed-tasks aligner">Completed Tasks: <span>0</span></div>
+            <div class="textarea-pending-tasks aligner">Pending Tasks: <span>0</span></div>
+        </div>
+        <div class="task-container">
+            <div class="todo-tasks">
+                <h2>Pending Tasks</h2>
+                <div class="todo-card-container">
+                    
+                </div>
+            </div>
+            <div class="completed-tasks">
+                <h2>Completed Tasks</h2>
+                <div class="completed-tasks-container">      
+                </div>
+            </div>
+        </div>
+        <div class="new-dialog-box">
+            <img src="images/cross.svg" alt="Cross" class="invert close">
+            <h2 style="margin-bottom: 30px;">INPUT DETAILS</h2>
+            <input type="text" id="task-name" placeholder="Enter the task name">
+            <input type="text" id="task-des" placeholder="Enter short description">
+            <h3>Choose task priority</h3>
+            <select  id="priority">
+                <option id="p-1" value="HIGH" selected>High</option>
+                <option id="p-2" value="MODERATE" selected>Moderate</option>
+                <option id="p-3" value="LOW">Low</option>
+            </select>
+            <button class="btn add-btn">
+                ADD
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p>Created by Abdulrehman Munir | Contact: 03280055453</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
